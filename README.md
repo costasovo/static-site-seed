@@ -1,2 +1,2 @@
 # static-site-seed
-Sass + gulp + basic responsive layout = seed for simple responsive website template
+Basic responsive layout (sass) + gulp = seed for simple responsive website/website template 
