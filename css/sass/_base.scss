@@ -1,0 +1,199 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav, 
+section { 
+	display: block;
+}
+
+html {
+	background: $background;
+	overflow-y: auto;
+}
+
+body {
+	margin: 0;
+	min-width: $breakMinimum;
+	padding: 0;
+	padding-top: 0;
+	position: relative;
+	text-align: left;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $textColor;
+	font-family: $baseFontFamily;
+}
+
+::-moz-selection { 
+	background: #3197fc; 
+	color: #fff; 
+	text-shadow: none; 
+}
+
+::selection { 
+	background: #3197fc;
+	color: #fff;
+	text-shadow: none;
+}
+
+// Improve readability when focused and hovered in all browsers: h5bp.com/h
+a:hover,
+a:active { 
+	outline: 0; 
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+b, 
+strong { 
+	font-weight: bold;
+}
+
+address {
+	font-style: normal;
+	margin-bottom: $baseLineHeight;
+}
+
+blockquote { 
+	margin: $baseLineHeight 40px; 
+	}
+
+dfn { 
+	font-style: italic;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	display: block;
+	height: 0;
+	margin: $baseLineHeight 0;
+	padding: 0;
+}
+
+mark { 
+	background: #ff0;
+	color: #000;
+	font-style: italic;
+	font-weight: bold; 
+}
+
+q { 
+	quotes: none; 
+}
+
+q:before,
+q:after { 
+	content: "";
+}
+
+small { 
+	font-size: 85%; 
+}
+
+// Position subscript and superscript content without affecting line-height: h5bp.com/k
+sub, 
+sup { 
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline; 
+}
+
+sup { 
+	top: -.5em;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+ul,
+ol { 
+	margin: 0 0 $baseLineHeight;
+	padding: 0 0 0 25px; 
+}
+
+dd { margin: 0 0 0 25px; }
+
+.nav ul,
+.nav ol { 
+	list-style: none; 
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+img { 
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+form { 
+	margin: 0; 
+}
+
+fieldset { 
+	border: 0;
+	margin: 0;
+	padding: 0; 
+}
+
+// Indicate that 'label' will shift focus to the associated form element
+label {
+	cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea { 
+	font-size: 100%;
+	margin: 0;
+	vertical-align: middle;
+}
+
+textarea { 
+	overflow: auto;
+	vertical-align: top;
+
+	@include respond-to(small-screen) {
+		max-width: 80%;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td {
+	vertical-align: top;
+}
+
+noscript {
+	display: none;
+}

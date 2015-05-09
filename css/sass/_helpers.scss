@@ -1,0 +1,28 @@
+//Basic responsive helpers
+.hidden-tablet {
+	@include respond-to(medium-screen) {
+		display: none !important;
+	}
+}
+
+.hidden-mobile {
+	@include respond-to(small-screen) {
+		display: none !important;
+	}
+}
+
+.only-mobile {
+	display: none !important;
+
+	@include respond-to(medium-screen) {
+		display: none !important;
+	}
+
+	@include respond-to(small-screen) {
+		display: inline-block !important;
+	}
+}
+
+.clearfix {
+	clear: both;
+}

@@ -1,0 +1,47 @@
+// Animations
+$animationDurationFast: .3s;
+$animationDuration: .5s;
+
+// Backgrounds
+$background: #ddd;
+$lightBackground: #fff;
+$darkenBackground: #000;
+
+// Borders
+$borderColor: #d9d9d9;
+
+// Colors
+$textColor: #000;
+$highlightedTextColor: #a2191b;
+$linkColor: #a2191b;
+$linkColorVisited: lighten(#a2191b, 5%);
+$linkColorHover: darken(#a2191b, 5%);
+$headingColor: #000;
+
+// Typography
+$baseFontSize: 14;
+$baseFontFamily: 'Open-Sans', sans-serif;
+$baseFontHeaderFamily: 'Open-Sans', sans-serif;
+$navigationFontFamily: 'Open-Sans', sans-serif;
+$baseLineHeight: 18px;
+
+// Layout
+$pageWidth: 980px;
+$pageWidthWide: 1200px;
+$pageWidthMobile: 620px;
+$tabletHeaderHeight: 50px;
+
+// Responsive break points
+$breakMinimum: 320px;
+$breakSmall: $pageWidthMobile;
+$breakMedium: $pageWidth;
+$breakWide:  1200px;
+
+
+// Z-indexes
+$zindexTooltips: 12000;
+$zindexModal: 100; 
+$zindexMinimum: 1; 
+
+
+

@@ -1,0 +1,25 @@
+exclude:
+  - './css/sass/_fonts.scss'
+  - './css/sass/module/_bxslider.scss'
+
+linters:
+  NameFormat:
+    enabled: false
+
+  Indentation:
+    enabled: true
+    width: 1
+
+  SelectorDepth:
+      enabled: true
+      max_depth: 4
+
+  StringQuotes:
+    enabled: true
+    style: double_quotes
+
+  UrlFormat:
+      enabled: false
+
+  UrlQuotes:
+      enabled: false

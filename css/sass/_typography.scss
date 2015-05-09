@@ -1,0 +1,132 @@
+body {
+	color: $textColor;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: $headingColor;
+}
+
+h1 {
+	font-size: 26px;
+	
+	&:first-child,
+	&.first-heading {
+		margin-top: 0;
+	}
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+strong,
+b {
+	font-weight: 600;
+}
+
+img {
+
+	&.left {
+		float: left;
+		margin: 0 15px 10px 0;
+	}
+
+	&.right {
+		float: right;
+		margin: 0 0 10px 15px;
+	}
+}
+
+.highlighted {
+	color: $highlightedTextColor;
+}
+
+ul,
+ol {
+	color: $textColor;
+	padding-left: 20px;
+}
+
+a {
+	color: $linkColor;
+}
+
+p {
+	color: $textColor;
+	max-width: 800px;
+}
+
+table {
+	border-collapse: collapse;
+
+	th,
+	td {
+		border: 1px solid $borderColor;
+		color: $textColor;
+		padding: 8px 15px;
+
+		&.right {
+			text-align: right;
+		}
+
+		&.left {
+			text-align: left;
+		}
+	}
+
+	th {
+		background: $darkenBackground;
+		color: $highlightedTextColor;
+	}
+}
+
+blockquote {
+	color: $textColor;
+	display: inline-block;
+	font-style: italic;
+	margin: 10px 30px;
+	max-width: 690px;
+	padding: 10px 25px;
+	position: relative;
+
+	@include respond-to(medium-screen) {
+		margin: 10px 0;
+	}
+
+	&:before {
+		color: $highlightedTextColor;
+		content: "“";
+		font-size: 60px;
+		left: -10px;
+		position: absolute;
+		top: -25px;
+	}
+
+	&:after {
+		bottom: -50px;
+		color: $highlightedTextColor;
+		content: "”";
+		font-size: 60px;
+		position: absolute;
+		right: 0;
+	}
+}

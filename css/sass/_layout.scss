@@ -1,0 +1,40 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	padding: 30px 0 0;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	@include respond-to(medium-screen) {
+		padding: 0;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	width: $pageWidth;
+
+	@include respond-to(medium-screen) {
+		width: 100%;
+	}
+
+	@include respond-to(wide-screen) {
+		width: $pageWidthWide;
+	}
+}
+
+.content {
+	background: #fff;
+	padding: 30px 65px;
+
+	@include respond-to(small-screen) {
+		padding: 15px;
+	}
+}
+
+

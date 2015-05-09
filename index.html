@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Simple website seed</title>
+
+	<meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/style.css" media="all">
+
+	
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav class="nav">
+				<a href="#homepage" class="logo"><img src="http://placehold.it/200x60" alt="Your logo"></a>
+				<ul class="hidden-mobile">
+					<li><a href="#homepage">Home</a></li>
+					<li><a href="#about">About me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="content js-simple-router-page" id="homepage">
+			<h1>Homepage</h1>
+			<p>Hello</p>
+		</div>
+
+		<div class="content js-simple-router-page" id="about">
+			<h1>About</h1>
+			<p>Hello</p>
+		</div>
+			
+	<div class="mobile-menu nav js-mobile-menu">
+		<ul>
+			<li><a href="#homepage">Home</a></li>
+			<li><a href="#about">About me</a></li>
+			<li class="switch-on js-mob-menu-on"><a href="#" class="icon-chevron-thin-up">show more&hellip;</a></li>
+			<li class="switch-off js-mob-menu-off"><a href="#" class="icon-chevron-thin-down">hide</a></li>
+		</ul>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="./js/common.js"></script>
+	<!-- dev scripts -->
+	<script src="./js/simple-router.js"></script>
+</body>
+</html>

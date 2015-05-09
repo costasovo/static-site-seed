@@ -1,0 +1,19 @@
+//Responsive mixin - available in SASS 3.2
+@mixin respond-to($media) {
+	@if $media == small-screen {
+		@media screen and (max-width: $breakSmall) { @content; }
+	} @else if $media == medium-screen {
+		@media screen and (max-width: $breakMedium) { @content; }
+	} @else if $media == default-screen {
+		@media screen and (min-width: $breakMedium + 1) { @content; }
+	} @else if $media == wide-screen {
+		@media screen and (min-width: $breakWide + 1) { @content; }
+	} @else if $media == retina {
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+	}
+}
+
+@mixin size ($width, $height) {
+	height: $height;
+	width: $width;
+}

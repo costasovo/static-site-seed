@@ -1,0 +1,14 @@
+{
+  "name": "costasovo-gulp-devkit",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.8",
+    "gulp-sass": "~2.0",
+    "gulp-coffee": "~2.2",
+    "gulp-util": "~3.0",
+    "gulp-scss-lint": "~0.1",
+    "gulp-autoprefixer": "~0.0.10",
+    "gulp-webserver": "~0.9"
+  }
+}

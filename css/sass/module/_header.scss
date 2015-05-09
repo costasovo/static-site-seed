@@ -1,0 +1,53 @@
+header {
+	background: $lightBackground;
+	padding: 25px 30px;
+	width: 100%;
+
+	@include respond-to(wide-screen) {
+		padding: 25px 65px;
+	}
+
+	@include respond-to(medium-screen) {
+		.logo {
+			img { width: 250px; }
+		}
+	}
+
+	@include respond-to(small-screen) {
+		padding: 10px 15px;
+		text-align: center;
+
+		.logo {
+			img { width: 200px; }
+		}
+	}
+
+	.nav {
+		font-size: 18px;
+		position: relative;
+	}
+
+	ul {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		li {
+			display: inline-block;
+			line-height: 50px;
+			padding-left: 25px;
+
+			@include respond-to(medium-screen) {
+				padding-left: 15px;
+			}
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			a {
+				font-weight: 400;
+			}
+		}
+	}
+}

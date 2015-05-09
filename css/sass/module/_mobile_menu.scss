@@ -1,0 +1,54 @@
+.mobile-menu {
+	bottom: 0;
+	display: none !important;
+	left: 0;
+	max-height: 100%;
+	position: fixed;
+	width: 100%;
+
+	ul {
+		background: $lightBackground;
+		border-top: 4px solid $linkColor;
+		bottom: 0;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+
+		li {
+			display: none;
+			line-height: 45px;
+			padding: 0 15px;
+
+			&:nth-child(-n+2) {
+				display: inline-block;
+			}
+
+			&.switch-on {
+				display: inline-block;
+			}
+		}
+	}
+
+	@include respond-to(small-screen) {
+		display: inline-block !important;
+	}
+
+	&.active {
+		height: 100%;
+		z-index: 2000;
+
+		ul {
+			max-height: 100%;
+			overflow: auto;
+
+			li {
+				border-bottom: 1px solid $borderColor;
+				display: block !important;
+
+				&.switch-on {
+					display: none !important;
+				}
+			}
+		}
+	}
+}
