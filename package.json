@@ -1,6 +1,6 @@
 {
-  "name": "costasovo-gulp-devkit",
-  "version": "0.0.0",
+  "name": "costasovo-static-site-seed",
+  "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
     "gulp": "~3.8",
