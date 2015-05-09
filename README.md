@@ -10,7 +10,7 @@ Basic responsive layout (sass) + gulp = seed for simple responsive website/websi
 
 # Prerequisities
 * Sass - gem install sass
-* gulp - nom install -g gulp
+* gulp - npm install -g gulp
 
 # Instalation and start
 npm install
